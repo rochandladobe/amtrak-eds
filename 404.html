@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>404 - Amtrak</title>
+  <title>Amtrak</title>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script>
+    // If we're at root /, redirect to /index.html (served from code bus)
+    if (window.location.pathname === '/' || window.location.pathname === '') {
+      window.location.replace('/index.html');
+    }
+  </script>
 </head>
 <body>
 <h1>404 - Page not found</h1>
